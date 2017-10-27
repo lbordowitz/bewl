@@ -8,7 +8,7 @@ scalacOptions ++= Seq("-feature", "-deprecation")
 
 resolvers += "Maven central" at "http://repo1.maven.org/maven2/"
 
-parallelExecution in Test := false
+parallelExecution in Test := true
 
 libraryDependencies ++= Seq(
   "junit" % "junit" % "4.12" % "test" exclude(
